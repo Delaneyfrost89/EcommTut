@@ -2,6 +2,6 @@ module.exports = {
   reactStrictMode: true,
   target: 'serverless',
   images: {
-    domains: ['hyperbros.local'],
+    domains: ['delaneyfrost.com'],
   },
 }

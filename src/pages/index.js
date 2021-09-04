@@ -74,7 +74,7 @@ export default function Home({ products }) {
 
 export async function getStaticProps() {
   const client = new ApolloClient({
-    uri: 'http://hyperbros.local/graphql',
+    uri: 'https://delaneyfrost.com/graphql',
     cache: new InMemoryCache(),
   })
 
@@ -85,15 +85,14 @@ export async function getStaticProps() {
           edges {
             node {
               id
-              content
               featuredImage {
                 node {
-                  altText
-                  sourceUrl
                   mediaDetails {
-                    height
                     width
+                    height
                   }
+                  sourceUrl
+                  altText
                 }
               }
               title
