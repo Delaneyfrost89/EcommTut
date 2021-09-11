@@ -1,10 +1,15 @@
+@import "@styles/settings/__settings";
+
 .header {
   width: 100%;
-  background-color: lightblue;
+  background-color: $color_hyperbros_blue;
+
+  padding: .5em 0;
   color: white;
- p {
-   margin: 0;
- }
+
+  p {
+    margin: 0;
+  }
 }
 
 .headerContainer {
@@ -16,10 +21,14 @@
 
 .headerTitle {
   font-size: 2em;
+  color: $color_hyperbros_yellow;
+  font-family: $font-family-display;
+  font-weight: $font-weight-display-bold;
 }
 
 .headerCart {
   button {
+
     background: transparent;
     color: inherit;
     border: none;
@@ -28,8 +37,10 @@
     align-items: center;
     cursor: pointer;
 
-  svg {
-    margin-right: .5em;
+    svg {
+      color: $color_hyperbros_yellow;
+      margin-right: .5em;
+      font-family: $font-family-display;
+    }
   }
-}
 }

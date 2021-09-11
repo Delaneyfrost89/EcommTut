@@ -1,10 +1,36 @@
+@import "@styles/settings/__settings";
+
+
 .button {
   font-size: 1em;
   color: white;
-  background-color: #4faf43;
+  font-family: $font-family-display;
+  font-weight: $font-weight-display-bold;
+  background-color: $color_hyperbros_green;
   border: none;
-  font-weight: bold;
   text-transform: uppercase;
   padding: .6em 1em;
   cursor: pointer;
+
+  &[data-color="yellow"] {
+    background-color: $color_hyperbros_yellow;
+    color: $color_hyperbros_blue;
+  }
+
+  &:hover {
+    background-color: lighten($color_hyperbros_green, 10);
+    transform: translateY(-3px);
+    transition: transform .2s;
+
+    &[data-color="yellow"] {
+      background-color: lighten($color_hyperbros_yellow, 10);
+    }
+  }
+
+  &:active {
+    transform: translateY(3px) scaleY(.8) scaleX(1.2);
+    transition: transform .1s;
+
+    
+  }
 }
