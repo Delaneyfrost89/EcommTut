@@ -35,6 +35,7 @@ export default function Home({ products, allegiances }) {
 
   return (
     <Container>
+      <h4>Some thing to test</h4>
       <h1 className='sr-only'>Hyper Bros. Trading Cards</h1>
       <h2 className='sr-only'>Available Cards</h2>
       <div className={styles.discover}>
